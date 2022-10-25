@@ -1,13 +1,13 @@
 import Spline from '@splinetool/react-spline';
 import { useEffect, useState } from 'react'
 
-export default function Splinescene() {
+export default function Splinescene({ handleLoading }) {
 
 
 
-    // useEffect(()=>{
-    //     handleLoading()
-    //     },[])
+    useEffect(() => {
+        handleLoading()
+    }, [])
 
 
     return (
