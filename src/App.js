@@ -35,7 +35,7 @@ export default function App() {
         <div className="flex-column">
         <div className = "whoami">
             <h1 style={{color: "Purple"}}>Who Am I?</h1>
-          <p data-aos="fade-left">I am a full stack developer with a passion for developing functional and 
+          <p>I am a full stack developer with a passion for developing functional and 
             practical products that improve the efficiency of processes and quality of life. 
             Capitalizing on my previous Engineering and Quality Control experience, I deliver 
             well rounded apps that satisfy the trifecta of functionality, UX, and UI design. 
