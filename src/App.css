@@ -3,6 +3,14 @@
   width: 100vw;
   position: absolute;
   z-index: 1;
+
+
+}
+
+.close {
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
 }
 
 .loader {
