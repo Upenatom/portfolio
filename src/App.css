@@ -1,34 +1,38 @@
+h2 {
+  width: 43%;
+  text-align: center;
+}
+
 .spline {
   height: 100vh;
   width: 100vw;
   position: absolute;
   z-index: 1;
-
-
 }
 
 .close {
-  height: 0px;
-  width: 0px;
-  overflow: hidden;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition: width 3s 3s, height 3s 3s, opacity 2s;
 }
 
 .loader {
 
   height: 100vh;
-  width: 100vw;
-  background-color: rgb(0, 0, 0, .5);
+  width: 100%;
+  background-color: rgb(0, 0, 0);
   position: absolute;
   color: white;
   z-index: 2;
   margin: 0;
-  scroll-snap-type: y mandatory;
-  overflow-y: auto;
+
 
 }
 
 .page1 {
-  font-size: 50px;
+  position: relative;
+  font-size: 200%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,47 +41,207 @@
   width: 100%;
   background-color: rgb(0, 0, 0);
   margin: 0;
-  scroll-snap-align: start;
+  text-justify: center;
+  line-height: 400%;
 
 }
 
 .page2 {
-
+  position: relative;
+  font-size: 200%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: rgb(44, 42, 42);
+  background-color: rgb(10, 10, 10);
   margin: 0;
-  scroll-snap-align: start;
+
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  width: 75%;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+
+.profilepic {
+  position: relative;
+  width: 25%;
+  height: 0;
+  padding-bottom: 25%;
+  left: 5%;
+  border: .2em solid purple;
+  border-radius: 50%;
+}
+
+.whoami {
+  margin-left: 10em;
+  width: 75%;
+  text-align: justify;
+  text-justify: inter-character;
+  font-style: italic;
+
 }
 
 .page3 {
-
+  position: relative;
+  font-size: 250%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: rgb(68, 66, 66);
+  background-color: rgb(0, 0, 0);
+}
+
+
+
+
+
+.page4 {
+  position: relative;
+  font-size: 200%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(20, 20, 20);
   margin: 0;
-  scroll-snap-align: start;
+}
+
+
+.page5 {
+  position: relative;
+  font-size: 200%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(30, 30, 30);
+  margin: 0;
 
 }
 
-.page4 {
+.scrollDown {
+  position: absolute;
+  bottom: 2em;
+  border: .2em solid rgb(225, 225, 225);
+  height: 3em;
+  width: 2em;
+  border-radius: 1em;
+}
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  background-color: rgb(68, 66, 66);
-  margin: 0;
-  scroll-snap-align: start;
+.scrollDown::before {
+  position: absolute;
+  content: "";
+  margin: auto;
+  top: .3em;
+  left: 0;
+  right: 0;
+  border-bottom: .2em solid white;
+  border-right: .2em solid white;
+  height: .75em;
+  width: .75em;
+  transform: rotate(45deg);
+  animation: pulse 2s infinite;
+}
 
+.scrollDown::after {
+  position: absolute;
+  content: "";
+  margin: auto;
+  top: 1.4em;
+  left: 0;
+  right: 0;
+  border-bottom: .2em solid white;
+  border-right: .2em solid white;
+  height: .75em;
+  width: .75em;
+  transform: rotate(45deg);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    border-bottom: .2em solid white;
+    border-right: .2em solid white;
+  }
+
+  100% {
+    border-bottom: .2em solid rgb(20, 20, 20);
+    border-right: .2em solid rgb(20, 20, 20);
+  }
+}
+
+.integrate {
+  color: greenyellow;
+  animation: flash 2.5s infinite;
+  font-family: monospace
+}
+
+.integrate2 {
+  color: greenyellow;
+  font-family: monospace
+}
+
+@keyframes flash {
+  0% {
+    color: greenyellow;
+  }
+
+  100% {
+    color: rgb(20, 20, 20);
+    color: rgb(20, 20, 20);
+  }
+}
+
+button {
+  background-color: rgb(30, 30, 30);
+  padding: 0.5em 3em;
+  border: 0.16em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  transition: all 0.15s;
+  font-size: .7em;
+}
+
+button:hover {
+  color: rgb(130, 130, 51);
+  border-color: rgb(130, 130, 51);
+}
+
+button:active {
+  color: #BBBBBB;
+  border-color: #BBBBBB;
+}
+
+.meme {
+  height: auto;
+  width: auto;
 }

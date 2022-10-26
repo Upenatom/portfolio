@@ -1,6 +1,9 @@
 import Splinescene from "./Component/Spline/Spline";
+import Meme from "./Component/Meme/Meme";
 import './App.css'
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function App() {
 
@@ -9,33 +12,71 @@ export default function App() {
   const changeStyle = () => {
     setStyle("close");
   };
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
 
   return (
     <div className="App">
       <div className={style}>
         <div className='page1'>
-          <h1>Hello web traveller! I am Randolph Crasto.</h1>
-          <h1>Welcome to my portfolio site!</h1>
-          <h2>Who Am I?</h2>
-          <p>I am a full stack developer with a passion for developing functional and 
+          <h1><span style={{color: "yellow", fontSize:"125%"}}>Hello</span> Web Traveller!</h1>
+          <h1>My name is <span style={{color: "blue", fontSize:"200%"}}>Randolph</span>. </h1>
+          <h2>Welcome to my <span style={{color: "yellow", fontSize:"125%"}}>Portfolio Gallery!</span></h2>
+          <div className='scrollDown'/>
+        </div>
+
+        <div className="page2">
+        <div className="flex-row">
+                    
+        <div className="profilepic"  data-aos="fade-right" data-aos-delay="1000">
+          
+        </div>
+        <div className="flex-column">
+        <div className = "whoami" data-aos="fade-left">
+            <h1 style={{color: "Purple"}}>Who Am I?</h1>
+          <p data-aos="fade-left">I am a full stack developer with a passion for developing functional and 
             practical products that improve the efficiency of processes and quality of life. 
             Capitalizing on my previous Engineering and Quality Control experience, I deliver 
             well rounded apps that satisfy the trifecta of functionality, UX, and UI design. 
             I thrive on knowing my products deliver on all the clients needs, and look forward 
             to opportunities to learn new and exciting technologies I can apply to my work.</p>
         </div>
-        <div className="page2">
-          <h2>This won't be like anyother portfolio website you've seen before!</h2>
-          <h2>First we must prepare by downloading your conciousness into an internet recognizable format...</h2>
+        
+            </div>
+            </div>
+          <div className='scrollDown'/>
         </div>
+
         <div className="page3">
-          <h1>..A MEME</h1>
-          
+        <h2 data-aos="fade-down-right"
+            data-aos-duration="2000">This will <span style={{textDecoration: "underline"}}>not</span> be a standard portfolio experience.</h2>
+        <div className='integrate'> <h1>MERGING...</h1></div>
+        <h2 data-aos="fade-up-left"
+        data-aos-duration="2000">We must prepare by merging with the most <span style={{color: "red"}}>POWERFUL</span> entity on the web...</h2>
+        <div className='scrollDown'/>
         </div>
         <div className="page4">
-          <h1>YOU ARE NOW READY TO ENTER THE GALLERY!</h1>
-          <button onClick={changeStyle}>Enter THE GALLERY</button>
+
+          <div className="flex-row">
+
+         
+          <Meme className="meme"/>
+          
+          
+          <div className="flex-column-center">
+            <h2 className="integrate">MERGE COMPLETE</h2>
+          <h1 data-aos="fade-up"
+              data-aos-duration="3000" data-aos-delay="1200">...THE INTERNET MEME</h1>
+              </div>
+          </div>
+          <div className='scrollDown'/>
+        </div>
+        <div className="page5">
+          <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="500">YOU ARE NOW READY.</h1> 
+          <button onClick={changeStyle} ><h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="700">ENTER THE GALLERY</h1></button>
+          
         </div>
       </div>
       <div className="spline">
