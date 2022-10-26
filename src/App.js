@@ -30,10 +30,10 @@ export default function App() {
         <div className="page2">
         <div className="flex-row">
                     
-        <div className="profilepic"  data-aos="fade-right"/>
+        <div className="profilepic"/>
           
         <div className="flex-column">
-        <div className = "whoami" data-aos="fade-left">
+        <div className = "whoami">
             <h1 style={{color: "Purple"}}>Who Am I?</h1>
           <p data-aos="fade-left">I am a full stack developer with a passion for developing functional and 
             practical products that improve the efficiency of processes and quality of life. 
