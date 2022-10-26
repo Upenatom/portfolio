@@ -148,23 +148,23 @@ h2 {
 .scrollDown {
   position: absolute;
   bottom: 2em;
-  border: .2em solid rgb(225, 225, 225);
-  height: 3em;
-  width: 2em;
-  border-radius: 1em;
+  border: .1em solid rgb(225, 225, 225);
+  height: 1.5em;
+  width: 1em;
+  border-radius: .5em;
 }
 
 .scrollDown::before {
   position: absolute;
   content: "";
   margin: auto;
-  top: .3em;
+  top: .1em;
   left: 0;
   right: 0;
-  border-bottom: .2em solid white;
-  border-right: .2em solid white;
-  height: .75em;
-  width: .75em;
+  border-bottom: .05em solid white;
+  border-right: .05em solid white;
+  height: .5em;
+  width: .5em;
   transform: rotate(45deg);
   animation: pulse 2s infinite;
 }
@@ -173,26 +173,26 @@ h2 {
   position: absolute;
   content: "";
   margin: auto;
-  top: 1.4em;
+  top: .7em;
   left: 0;
   right: 0;
-  border-bottom: .2em solid white;
-  border-right: .2em solid white;
-  height: .75em;
-  width: .75em;
+  border-bottom: .05em solid white;
+  border-right: .05em solid white;
+  height: .5em;
+  width: .5em;
   transform: rotate(45deg);
   animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
   0% {
-    border-bottom: .2em solid white;
-    border-right: .2em solid white;
+    border-bottom: .05em solid white;
+    border-right: .05em solid white;
   }
 
   100% {
-    border-bottom: .2em solid rgb(20, 20, 20);
-    border-right: .2em solid rgb(20, 20, 20);
+    border-bottom: .05em solid rgb(20, 20, 20);
+    border-right: .05em solid rgb(20, 20, 20);
   }
 }
 

@@ -30,9 +30,9 @@ export default function App() {
         <div className="page2">
         <div className="flex-row">
                     
-        <div className="profilepic"/>
+        <div className="profilepic" data-aos="fade-right"/>
           
-        <div className="flex-column">
+        <div className="flex-column" data-aos="fade-left">
         <div className = "whoami">
             <h1 style={{color: "Purple"}}>Who Am I?</h1>
           <p>I am a full stack developer with a passion for developing functional and 
@@ -50,10 +50,10 @@ export default function App() {
 
         <div className="page3">
         <h2 data-aos="fade-down-right"
-            data-aos-duration="2000">This will <span style={{textDecoration: "underline"}}>not</span> be a standard portfolio experience.</h2>
+            data-aos-duration="1000">This will <span style={{textDecoration: "underline"}}>not</span> be a standard portfolio experience.</h2>
         <div className='integrate'> <h1>MERGING...</h1></div>
         <h2 data-aos="fade-up-left"
-        data-aos-duration="2000">We must prepare by merging with the most <span style={{color: "red"}}>POWERFUL</span> entity on the web...</h2>
+        data-aos-duration="1000">You must merge with the most <span style={{color: "red"}}>POWERFUL</span> entity on the web...</h2>
         <div className='scrollDown'/>
         </div>
         <div className="page4">
@@ -66,8 +66,8 @@ export default function App() {
           
           <div className="flex-column-center">
             <h2 className="integrate">MERGE COMPLETE</h2>
-          <h1 data-aos="fade-up"
-              data-aos-duration="3000" data-aos-delay="1200">...THE INTERNET MEME</h1>
+          <h2 data-aos="fade-up"
+              data-aos-duration="3000" data-aos-delay="1200">...THE INTERNET MEME</h2>
               </div>
           </div>
           <div className='scrollDown'/>
