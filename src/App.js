@@ -27,13 +27,13 @@ export default function App() {
           
         </div>
 
-        <div className="page2">
-        <div className="flex-row">
+        <div className="page2 flex-row">
+        
                     
         <div className="profilepic" data-aos="fade-right"/>
           
-        <div className="flex-column">
-        <div className = "whoami" data-aos="fade-left">
+        
+        <div className = "whoami flex-column" data-aos="fade-left">
             <h1 style={{color: "Purple"}}>Who Am I?</h1>
           <p>I am a full stack developer with a passion for developing functional and 
             practical products that improve the efficiency of processes and quality of life. 
@@ -43,8 +43,8 @@ export default function App() {
             to opportunities to learn new and exciting technologies I can apply to my work.</p>
         </div>
         
-            </div>
-            </div>
+            
+            
          
         </div>
 
