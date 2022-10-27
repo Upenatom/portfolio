@@ -24,7 +24,7 @@ export default function App() {
           <h1><span style={{color: "yellow", fontSize:"125%"}}>Hello</span> Web Traveller!</h1>
           <h1>My name is <span style={{color: "blue", fontSize:"200%"}}>Randolph</span>. </h1>
           <h2>Welcome to my <span style={{color: "yellow", fontSize:"125%"}}>Portfolio Gallery!</span></h2>
-          {/* <div className='scrollDown'/> */}
+          
         </div>
 
         <div className="page2">
@@ -32,8 +32,8 @@ export default function App() {
                     
         <div className="profilepic" data-aos="fade-right"/>
           
-        <div className="flex-column" data-aos="fade-left">
-        <div className = "whoami">
+        <div className="flex-column">
+        <div className = "whoami" data-aos="fade-left">
             <h1 style={{color: "Purple"}}>Who Am I?</h1>
           <p>I am a full stack developer with a passion for developing functional and 
             practical products that improve the efficiency of processes and quality of life. 
@@ -45,7 +45,7 @@ export default function App() {
         
             </div>
             </div>
-          {/* <div className='scrollDown'/> */}
+         
         </div>
 
         <div className="page3">
@@ -55,7 +55,7 @@ export default function App() {
         data-aos-duration="1000">You must merge with the most <span style={{color: "red"}}>POWERFUL</span> entity on the web to continue...</h2>
         <div className='integrate'> <h1>MERGING...</h1></div>
         
-        {/* <div className='scrollDown'/> */}
+        
         
         </div>
         <div className="page4">
@@ -72,7 +72,7 @@ export default function App() {
             <h2 className="integrate">MERGE COMPLETE</h2>
               </div>
           </div>
-          {/* <div className='scrollDown'/> */}
+          
         </div>
         <div className="page5">
           <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="500">YOU ARE NOW READY.</h1> 
