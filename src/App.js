@@ -46,9 +46,9 @@ export default function App() {
         </div>
 
         <div className="page3">
-        <h2 data-aos="fade-down-right"
+        <h2 data-aos="fade-in"
             data-aos-duration="1000">This will be a unique portfolio experience.</h2>
-        <h2 data-aos="fade-up-left"
+        <h2 data-aos="fade-in"
         data-aos-duration="1000">But first we must merge with the most <span style={{color: "red"}}>POWERFUL</span> entity on the web...</h2>
         <div className='integrate'> <h1>MERGING...</h1></div>
         
@@ -64,16 +64,16 @@ export default function App() {
           
           
           <div className="flex-column-center">
-          <h2 data-aos="fade-up"
-              data-aos-duration="3000" data-aos-delay="1200">...THE INTERNET MEME</h2>
+          <h2 data-aos="fade-in"
+              data-aos-delay="1000">...THE INTERNET MEME</h2>
             <h2 className="integrate">MERGE COMPLETE</h2>
               </div>
           </div>
           
         </div>
         <div className="page5">
-          <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="500">YOU ARE NOW READY.</h1> 
-          <button onClick={changeStyle} ><h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="700">ENTER THE GALLERY</h1></button>
+          <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">YOU ARE NOW READY.</h1> 
+          <button onClick={changeStyle} ><h1 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="700">ENTER THE GALLERY</h1></button>
           
         </div>
       </div>
