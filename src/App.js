@@ -34,7 +34,7 @@ export default function App() {
           
         
         <div className = "whoami">
-          <h1 style={{color: "Purple"}}>Who Am I?</h1>
+          <h1 style={{color: "#0f2f5f"}}>Who I am and what I do:</h1>
           <p style={{width: "60%"}}>I am a full stack developer with a passion for developing functional and 
             practical products that improve the efficiency of processes and quality of life. 
             Capitalizing on my previous Engineering and Quality Control experience, I deliver 
@@ -49,7 +49,7 @@ export default function App() {
         <h2 data-aos="fade-in"
             data-aos-duration="1000">This will be a unique portfolio experience.</h2>
         <h2 data-aos="fade-in"
-        data-aos-duration="1000">But first we must merge with the most <span style={{color: "red"}}>POWERFUL</span> entity on the web...</h2>
+        data-aos-duration="1000">Before we enter, we need to merge with the most <span style={{color: "red"}}>POWERFUL</span> entity on the web...</h2>
         <div className='integrate'> <h1>MERGING...</h1></div>
         
         

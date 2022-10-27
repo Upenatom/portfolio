@@ -45,7 +45,7 @@ h2 {
   margin: 0;
   text-justify: center;
   line-height: 400%;
-
+  color: bisque
 }
 
 .page2 {
@@ -86,10 +86,16 @@ h2 {
 
 .profilepic {
   position: relative;
-  width: 30%;
-  border: .2em solid purple;
+  width: 400px;
+  border: .2em solid #0f2f5f;
   border-radius: 50%;
   left: 10%;
+  background-image: url('./static/img/port3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(13, 30, 56);
+
 }
 
 .profilepic::before {
@@ -104,7 +110,7 @@ h2 {
   text-align: justify;
   text-justify: inter-character;
   font-style: italic;
-
+  color: rgb(21, 187, 187)
 }
 
 .page3 {
@@ -117,6 +123,7 @@ h2 {
   height: 100%;
   width: 100%;
   background-color: rgb(0, 0, 0);
+  color: bisque
 }
 
 
@@ -134,6 +141,7 @@ h2 {
   width: 100%;
   background-color: rgb(20, 20, 20);
   margin: 0;
+  color: bisque
 }
 
 
@@ -148,7 +156,7 @@ h2 {
   width: 100%;
   background-color: rgb(30, 30, 30);
   margin: 0;
-
+  color: bisque
 }
 
 
@@ -178,14 +186,15 @@ h2 {
 button {
   background-color: rgb(30, 30, 30);
   padding: 0.5em 3em;
-  border: 0.16em solid #FFFFFF;
+  border: 0.16em solid bisque;
   margin: 0 0.3em 0.3em 0;
   box-sizing: border-box;
   text-decoration: none;
-  color: white;
+
   text-align: center;
   transition: all 0.15s;
   font-size: .7em;
+  color: bisque
 }
 
 button:hover {
