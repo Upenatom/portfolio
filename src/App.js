@@ -27,24 +27,21 @@ export default function App() {
           
         </div>
 
-        <div className="page2 flex-row">
+        <div className="page2">
         
                     
-        <div className="profilepic" data-aos="fade-right"/>
+        <div className="profilepic"/>
           
         
-        <div className = "whoami flex-column" data-aos="fade-left">
-            <h1 style={{color: "Purple"}}>Who Am I?</h1>
-          <p>I am a full stack developer with a passion for developing functional and 
+        <div className = "whoami">
+          <h1 style={{color: "Purple"}}>Who Am I?</h1>
+          <p style={{width: "60%"}}>I am a full stack developer with a passion for developing functional and 
             practical products that improve the efficiency of processes and quality of life. 
             Capitalizing on my previous Engineering and Quality Control experience, I deliver 
             well rounded apps that satisfy the trifecta of functionality, UX, and UI design. 
             I thrive on knowing my products deliver on all the clients needs, and look forward 
             to opportunities to learn new and exciting technologies I can apply to my work.</p>
-        </div>
-        
-            
-            
+        </div>   
          
         </div>
 
