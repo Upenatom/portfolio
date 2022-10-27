@@ -51,10 +51,12 @@ export default function App() {
         <div className="page3">
         <h2 data-aos="fade-down-right"
             data-aos-duration="1000">This will <span style={{textDecoration: "underline"}}>not</span> be a standard portfolio experience.</h2>
-        <div className='integrate'> <h1>MERGING...</h1></div>
         <h2 data-aos="fade-up-left"
-        data-aos-duration="1000">You must merge with the most <span style={{color: "red"}}>POWERFUL</span> entity on the web...</h2>
+        data-aos-duration="1000">You must merge with the most <span style={{color: "red"}}>POWERFUL</span> entity on the web to continue...</h2>
+        <div className='integrate'> <h1>MERGING...</h1></div>
+        
         <div className='scrollDown'/>
+        
         </div>
         <div className="page4">
 
@@ -65,9 +67,9 @@ export default function App() {
           
           
           <div className="flex-column-center">
-            <h2 className="integrate">MERGE COMPLETE</h2>
           <h2 data-aos="fade-up"
               data-aos-duration="3000" data-aos-delay="1200">...THE INTERNET MEME</h2>
+            <h2 className="integrate">MERGE COMPLETE</h2>
               </div>
           </div>
           <div className='scrollDown'/>
