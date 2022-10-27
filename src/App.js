@@ -24,7 +24,7 @@ export default function App() {
           <h1><span style={{color: "yellow", fontSize:"125%"}}>Hello</span> Web Traveller!</h1>
           <h1>My name is <span style={{color: "blue", fontSize:"200%"}}>Randolph</span>. </h1>
           <h2>Welcome to my <span style={{color: "yellow", fontSize:"125%"}}>Portfolio Gallery!</span></h2>
-          <div className='scrollDown'/>
+          {/* <div className='scrollDown'/> */}
         </div>
 
         <div className="page2">
@@ -72,7 +72,7 @@ export default function App() {
             <h2 className="integrate">MERGE COMPLETE</h2>
               </div>
           </div>
-          <div className='scrollDown'/>
+          {/* <div className='scrollDown'/> */}
         </div>
         <div className="page5">
           <h1 data-aos="fade-in" data-aos-duration="3000" data-aos-delay="500">YOU ARE NOW READY.</h1> 
