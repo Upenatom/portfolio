@@ -45,7 +45,7 @@ export default function App() {
         
             </div>
             </div>
-          <div className='scrollDown'/>
+          {/* <div className='scrollDown'/> */}
         </div>
 
         <div className="page3">
@@ -55,7 +55,7 @@ export default function App() {
         data-aos-duration="1000">You must merge with the most <span style={{color: "red"}}>POWERFUL</span> entity on the web to continue...</h2>
         <div className='integrate'> <h1>MERGING...</h1></div>
         
-        <div className='scrollDown'/>
+        {/* <div className='scrollDown'/> */}
         
         </div>
         <div className="page4">
