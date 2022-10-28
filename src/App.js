@@ -34,8 +34,8 @@ export default function App() {
           
         
         <div className = "whoami">
-          <h1 style={{color: "#0f2f5f"}}>Who I am and what I do:</h1>
-          <p style={{width: "60%"}}>I am a full stack developer with a passion for developing functional and 
+          <h1 style={{color: "#0f2f5f"}}>Who I am and what I do</h1>
+          <p>I am a full stack developer with a passion for developing functional and 
             practical products that improve the efficiency of processes and quality of life. 
             Capitalizing on my previous Engineering and Quality Control experience, I deliver 
             well rounded apps that satisfy the trifecta of functionality, UX, and UI design. 
@@ -59,9 +59,9 @@ export default function App() {
 
           <div className="flex-row">
 
-         
-          <Meme className="meme"/>
-          
+         <div className="meme">
+          <Meme />
+          </div>
           
           <div className="flex-column-center">
           <h2 data-aos="fade-in"
