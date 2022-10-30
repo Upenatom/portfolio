@@ -85,7 +85,7 @@ h2 {
 .profilepic {
   left: 10%;
   position: relative;
-  width: 400px;
+  width: 25%;
   border: .2em solid #0f2f5f;
   border-radius: 50%;
   background-image: url('./static/img/port3.png');
@@ -112,7 +112,7 @@ h2 {
 }
 
 .whoami p {
-  width: 60%;
+  width: 80%;
 }
 
 .page3 {
@@ -240,7 +240,7 @@ button:active {
   .profilepic {
 
     position: relative;
-    width: 500px;
+    width: 50%;
     border: .2em solid #0f2f5f;
     border-radius: 50%;
     background-image: url('./static/img/port3.png');
@@ -308,7 +308,7 @@ button:active {
 }
 
 /*-----------MEDIA QUERY 400px--------------*/
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   .page1 {
     position: relative;
     font-size: 75%;
@@ -344,7 +344,7 @@ button:active {
     margin: 0;
     padding: 0;
     position: relative;
-    width: 75%;
+    width: 50%;
     border: .2em solid #0f2f5f;
     background-repeat: no-repeat;
     background-position: center;
