@@ -1,0 +1,16 @@
+.line {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+}
+
+.burger {
+    margin: 5px;
+    position: absolute;
+    top: 0px;
+    height: 35px;
+    width: 35px;
+    background-color: black;
+    z-index: 1
+}

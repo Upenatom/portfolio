@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom'
 import Nav from '../../Component/Nav/Nav'
+import Burger from '../../Component/Burger/Burger'
 import Picture from '../../Component/Picture/Picture'
-export default function About() {
+import './About.css'
+export default function About({ handleOnClick, navShow }) {
     return (
-        <div>
-            <Nav />
+        <div onClick={() => handleOnClick()}>
+            <Burger className='burg' handleOnClick={handleOnClick} />
+            {navShow ? <Nav handleOnClick={handleOnClick} /> : null}
             <Picture />
             <h1 style={{ color: "#0f2f5f" }}>Who I am and what I do</h1>
             <p>I am a full stack developer with a passion for developing functional and
