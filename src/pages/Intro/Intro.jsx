@@ -1,20 +1,17 @@
+import { useNavigate } from 'react-router-dom'
 import { useState, useRef } from 'react'
 import Intros from '../../Component/Introscene/Introscene'
 import Burger from '../../Component/Burger/Burger'
 import Speech from '../../Component/Speech/Speech'
+import Nav from '../../Component/Nav/Nav'
 
-export default function Intro() {
+export default function Intro({ handleOnClick, navShow }) {
     const divobj = useRef()
 
-    // const [theDiv, setTheDiv] = useState()
+    const navigate = useNavigate()
 
-    // const getterfunc = (y) => { setTheDiv(y) }
 
     const onWheel = (e) => {
-        console.log(e.deltaY)
-        console.log(divobj.current.scrollTop)
-
-
         if (e.deltaY < 0) {
             divobj.current.scrollTop -= 50
         }
@@ -23,16 +20,26 @@ export default function Intro() {
         }
     }
 
+    const onMouseUp = (e) => {
+        if (e.target.name === 'controller') {
+            navigate('/3dgallery')
+        } else if (e.target.name === 'phone') {
+            navigate('/')
+        }
+
+    }
+
 
 
 
     return (
         <>
-
+            <Burger handleOnClick={handleOnClick} />
+            {navShow ? <Nav handleOnClick={handleOnClick} /> : null}
             <Speech divobj={divobj} />
-            <Burger />
-            <Intros onWheel={onWheel} />
+            <Intros onWheel={onWheel} onMouseUp={onMouseUp} />
 
         </>
+
     )
 }

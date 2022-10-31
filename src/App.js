@@ -24,7 +24,7 @@ const handleOnClick = ()=>{
         <Route path='/' element={ <Home handleOnClick={handleOnClick} navShow={navShow} /> }/>
         <Route path='/aboutme' element={ <About handleOnClick={handleOnClick} navShow={navShow}/> }/>
         <Route path='/3dgallery' element={<ThreeGallery/>}/>
-        <Route path='/intro' element={<Intro/>}/>
+        <Route path='/intro' element={<Intro handleOnClick={handleOnClick} navShow={navShow}/>}/>
         {/* <Route path='/3dgallery' element={<Twogallery/>}/> */}
         <Route path= '*' element={<Navigate to='/' replace/>}/>
         </Routes>
