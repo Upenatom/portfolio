@@ -1,0 +1,16 @@
+.speech {
+    position: absolute;
+    color: white;
+    margin: 0;
+    overflow-y: scroll;
+    top: 25%;
+    left: 50%;
+    height: 200px
+}
+
+.first {
+    width: 400px;
+    font-size: 1.5em;
+    height: 800px;
+
+}

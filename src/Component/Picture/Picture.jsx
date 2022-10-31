@@ -1,7 +1,7 @@
 import React from 'react'
-
+import './Picture.css'
 export default function Picture() {
     return (
-        <div className='profilepic'>Picture</div>
+        <div className='profilepic'></div>
     )
 }

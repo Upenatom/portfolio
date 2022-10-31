@@ -1,10 +1,10 @@
 .profilepic {
 
-    position: relative;
-    width: 50%;
+    /* position: relative; */
+    width: 15%;
     border: .2em solid #0f2f5f;
     border-radius: 50%;
-    background-image: url('../../static/img/port3.png');
+    background-image: url('../../static/img/profilepic.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -12,8 +12,8 @@
 
 }
 
-/* .profilepic::before {
+.profilepic::before {
     content: '';
     display: block;
     padding-bottom: 100%;
-  } */
+}

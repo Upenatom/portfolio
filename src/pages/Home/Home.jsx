@@ -5,7 +5,7 @@ import './Home.css'
 export default function Home({ navShow, handleOnClick }) {
 
     return (
-        <div onClick={() => handleOnClick()}>
+        <div>
             <Burger className='burg' handleOnClick={handleOnClick} />
             {navShow ? <Nav handleOnClick={handleOnClick} /> : null}
 

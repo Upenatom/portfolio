@@ -6,15 +6,17 @@ import 'aos/dist/aos.css';
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import ThreeGallery from './pages/ThreeGallery/ThreeGallery'
+import Intro from './pages/Intro/Intro'
 
 export default function App() {
 
 const[navShow, setNavShow]=useState(false)
 
 const handleOnClick = ()=>{
-  console.log('burger clicked')
   setNavShow(!navShow)
 }
+
+
 
   return (
     <div className="App">
@@ -22,6 +24,7 @@ const handleOnClick = ()=>{
         <Route path='/' element={ <Home handleOnClick={handleOnClick} navShow={navShow} /> }/>
         <Route path='/aboutme' element={ <About handleOnClick={handleOnClick} navShow={navShow}/> }/>
         <Route path='/3dgallery' element={<ThreeGallery/>}/>
+        <Route path='/intro' element={<Intro/>}/>
         {/* <Route path='/3dgallery' element={<Twogallery/>}/> */}
         <Route path= '*' element={<Navigate to='/' replace/>}/>
         </Routes>
