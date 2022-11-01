@@ -33,9 +33,24 @@ export default function About({ handleOnClick, navShow, handleClickOutside }) {
                 </div>
                 <Scroll />
                 <div className='myskills'>
-                    <h1 >Skills I deliver</h1>
-                    <p>REACT | MongoDB |Javascript | Python | Django | Express | SQL | Git | HTML | CSS</p>
+
+                    <div className='skillstext'>
+                        <h1 >Skills I deliver</h1>
+                        <p>REACT | MongoDB |Javascript | Python | Django | Express | SQL | Git | HTML | CSS</p>
+                    </div>
+                    <div className='logos'>
+                        <div className='logo1'></div>
+                        <div className='logo2'></div>
+                        <div className='logo3'></div>
+                        <div className='logo4'></div>
+                        <div className='logo5'></div>
+                        <div className='logo6'></div>
+                        <div className='logo7'></div>
+                        <div className='logo8'></div>
+                    </div>
                 </div>
+
+
             </div>
         </div >
     )

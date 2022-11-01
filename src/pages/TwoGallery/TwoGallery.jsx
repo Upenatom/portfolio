@@ -139,11 +139,11 @@ export default function
             {navShow ? <Nav handleOnClick={handleOnClick} /> : null}
             <div className='thegallery' onClick={() => handleClickOutside()}>
                 <div className='app-pic1' onClick={handleDivClick}>
-                    <p>ROUTE TICKET</p>
                 </div>
+                <div className='tag-1' > <p>ROUTE TICKET</p></div>
                 <div className='app-pic2' onClick={handleDivClick} >
-                    <p>THRIFTOLOGY</p>
                 </div>
+                <div className='tag-2' > <p>THRIFTOLOGY</p></div>
                 <div className='app-pic3' onClick={handleDivClick} ></div>
                 <div className='tag-3' >
                     <p>GO BANANAS !!!!</p></div>

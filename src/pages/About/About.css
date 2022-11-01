@@ -81,28 +81,119 @@
     }
 }
 
+
+
+.logo1 {
+    grid-area: logo1;
+    background-image: url('../../static/img/javascript.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.logo2 {
+    grid-area: logo2;
+    background-image: url('../../static/img/mongo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+.logo3 {
+    grid-area: logo3;
+    background-image: url('../../static/img/React-icon.svg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 20%;
+}
+
+.logo4 {
+    grid-area: logo4;
+    background-image: url('../../static/img/css.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 20%;
+}
+
+.logo5 {
+    grid-area: logo5;
+    background-image: url('../../static/img/Django_logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 20%;
+}
+
+.logo6 {
+    grid-area: logo6;
+    background-image: url('../../static/img/Python.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 20%;
+}
+
+.logo7 {
+    grid-area: logo7;
+    background-image: url('../../static/img/HTML5.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 20%;
+}
+
+.logo8 {
+    grid-area: logo8;
+    background-image: url('../../static/img/express.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "logo1 logo3"
+        "logo2 logo8"
+        "logo5 logo6"
+        "logo7 logo4";
+}
+
 .myskills {
 
-    padding-left: 50em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". skillstext";
     height: 100vh;
 
 }
 
-.myskills h1 {
-    font-size: 4em;
-    width: auto;
-    font-family: 'Merriweather Sans', sans-serif;
-    color: rgb(18, 216, 209);
+.skillstext {
+    grid-area: skillstext;
+    margin-right: 20px;
+    align-self: center;
 
 }
 
-.myskills p {
+.skillstext h1 {
+    font-size: 5em;
+    width: auto;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(199, 174, 6);
+
+
+}
+
+.skillstext p {
     color: rgb(165, 187, 21);
     font-family: 'Roboto Mono', monospace;
     width: 100%;
-    font-size: 2em
+    font-size: 1.75em;
+    text-align: right;
 }

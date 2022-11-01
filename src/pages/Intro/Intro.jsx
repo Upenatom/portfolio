@@ -39,7 +39,7 @@ export default function Intro({ handleOnClick, navShow, handleClickOutside }) {
 
     }
     const onLoad = () => {
-        const delayInMilliseconds = 2000
+        const delayInMilliseconds = 3000
         setTimeout(function () {
             setLoad('noloader')
 

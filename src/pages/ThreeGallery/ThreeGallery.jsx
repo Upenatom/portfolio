@@ -11,12 +11,12 @@ export default function ThreeGallery() {
 
     const onMouseUp = (e) => {
         // console.log(e.target.name)
-        if (e.target.name === 'tophat') {
+        if (e.target.name === 'house') {
             navigate('/')
         }
-        else if (e.target.name === 'me') {
-            navigate('/aboutme')
-        }
+        // else if (e.target.name === 'Me') {
+        //     navigate('/aboutme')
+        // }
 
     }
 
