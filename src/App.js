@@ -31,7 +31,7 @@ const handleClickOutside = ()=>{
         <Route path='/3dgallery' element={<ThreeGallery/>}/>
         <Route path='/intro' element={<Intro handleOnClick={handleOnClick} navShow={navShow} handleClickOutside={handleClickOutside}/>}/>
         <Route path='/2dgallery' element={<TwoGallery handleOnClick={handleOnClick} navShow={navShow} handleClickOutside={handleClickOutside}/>}/> 
-        <Route path= '*' element={<Navigate to='/' replace/>}/>
+        <Route path= '*' element={<Navigate to='/portfolio' replace/>}/>
         </Routes>
 
     </div>
