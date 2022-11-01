@@ -16,7 +16,7 @@ export default function Intro({ handleOnClick, navShow, handleClickOutside }) {
 
 
     const onWheel = (e) => {
-        console.log(divobj.current.scrollTop)
+
         if (e.deltaY < 0) {
             divobj.current.scrollTop -= 50
         }
@@ -34,7 +34,7 @@ export default function Intro({ handleOnClick, navShow, handleClickOutside }) {
         if (e.target.name === 'controller') {
             navigate('/3dgallery')
         } else if (e.target.name === 'phone') {
-            navigate('/')
+            navigate('/2dgallery')
         }
 
     }
@@ -53,7 +53,7 @@ export default function Intro({ handleOnClick, navShow, handleClickOutside }) {
 
     return (
         <>
-            <div className={load}> <h1 className='text-glitch'>RE-ROUTING</h1> </div>
+            <div className={load}> <h1 className='text-glitch'>BROWSER HI-JACK COMPLETED</h1> <h1 className='text-glitch'><br /><br /><br /><br /><br /><br />...RE-ROUTING</h1></div>
             <Burger handleOnClick={handleOnClick} />
             {navShow ? <Nav handleOnClick={handleOnClick} /> : null}
             <Speech divobj={divobj} />

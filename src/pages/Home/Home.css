@@ -11,16 +11,21 @@ h1 {
     text-align: right;
 }
 
+
+
 .description {
     grid-area: describe;
     font-size: 3em;
     text-align: center;
     color: white;
+    border: solid 1 px white;
+    align-self: end;
+    padding-bottom: 100px;
 }
 
 .description h4 {
     margin: 0%;
-    line-height: .5em;
+    line-height: .75em;
 }
 
 .description h3 {
@@ -45,16 +50,7 @@ h1 {
         "describe . . stamp ";
     height: 100vh;
     width: 100%;
-    /* position: relative;
-    font-size: 200%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    text-justify: center;
-    line-height: 400%;
-    color: bisque */
+
 }
 
 .stamp-container {

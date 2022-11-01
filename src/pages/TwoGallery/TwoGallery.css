@@ -1,0 +1,181 @@
+.twogallery {
+    height: 100vh;
+    background-image: linear-gradient(rgb(0, 0, 0), bisque);
+    position: relative;
+
+}
+
+.twogallery h1 {
+    text-align: center;
+}
+
+.thegallery {
+
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        ". . . . . . "
+        ". pic1 . pic2 . ."
+        ". tag1 title tag2 . ."
+        ". pic3 . pic4 . ."
+        ". tag3 . tag4 . ."
+    ;
+
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.closebutton {
+    z-index: 4;
+    width: fit-content;
+    height: auto;
+    color: red;
+    font-size: 2em;
+    font-style: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
+.greyback {
+    top: 0;
+    z-index: 2;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, .75);
+}
+
+.greybackclosed {
+    display: none
+}
+
+.overlaydesc {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    height: 90vh;
+    width: 50vw;
+    margin-top: -45vh;
+    margin-left: -25vw;
+    position: absolute;
+    border: solid 5px rgb(35, 154, 209);
+    color: white;
+    background-color: rgb(0, 0, 0, 1);
+    font-size: 1.75em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.page-title {
+    display: flex;
+    align-self: center;
+    grid-area: title;
+    font-size: 1em;
+    margin: 5em;
+    filter: drop-shadow(10px 10px 5px rgb(0 0 0 / 0.5));
+}
+
+.page-title h1 {
+    text-align: center;
+    font-size: 4em;
+    border: solid 3px black;
+    background-image: linear-gradient(135deg, rgb(166, 127, 30), gold);
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(2, 2, 66)
+}
+
+.app-pic1 {
+    background-image: url('../../static/img/routesmall.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 500px;
+    grid-area: pic1;
+    background-position: center;
+    margin: 5px;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+}
+
+.app-pic2 {
+    background-image: url('../../static/img/Thriftologysmall.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 500px;
+    grid-area: pic2;
+    background-position: center;
+    margin: 5px;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+}
+
+
+.app-pic3 {
+    background-image: url('../../static/img/gobanans.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 500px;
+    grid-area: pic3;
+    background-position: center;
+    margin: 5px;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+
+}
+
+.app-pic4 {
+    background-image: url('../../static/img/Sadiessmall.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 500px;
+    grid-area: pic4;
+    background-position: center;
+    margin: 5px;
+    cursor: pointer;
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+}
+
+.tag-1 {
+    grid-area: tag1;
+    border: solid 1px black;
+}
+
+.tag-2 {
+    grid-area: tag2;
+    border: solid 1px black;
+}
+
+.tag-3 {
+    grid-area: tag3;
+    border: solid 1px black;
+}
+
+.tag-4 {
+    grid-area: tag4;
+    border: solid 1px black;
+}
+
+.tag-1 p,
+.tag-2 p,
+.tag-3 p,
+.tag-4 p {
+    margin: 0px;
+    padding: 5px;
+    background-image: linear-gradient(135deg, rgb(166, 127, 30), gold);
+}

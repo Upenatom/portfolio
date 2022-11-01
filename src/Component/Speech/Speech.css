@@ -1,23 +1,16 @@
-/* .flex-row {
-    position: absolute;
-    display: flex;
-    column-gap: 100px;
-    left: 10%;
-    width: 800px
-} */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&family=Roboto+Mono&display=swap');
 
 .speech {
-
+    font-family: 'Roboto Mono', monospace;
     position: absolute;
     color: white;
     margin: 0;
     overflow-y: hidden;
     top: 18%;
     left: 40%;
-    height: 250px;
+    height: 275px;
     z-index: 1;
     cursor: none;
-    text-align: center;
     line-height: 2em;
     pointer-events: none
 }
