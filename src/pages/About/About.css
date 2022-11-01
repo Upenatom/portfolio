@@ -1,19 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&family=Roboto+Mono&display=swap');
+
 .aboutpage {
     height: 100vh;
-    background-color: rgb(10, 10, 10);
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(4, 4, 57), rgb(12, 15, 160));
 }
 
 .aboutme {
-    padding-top: 100px;
-    padding-left: 50px;
-    font-size: 150%;
+
+    padding-left: 15em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
     width: 100vw;
-    background-color: rgb(10, 10, 10);
+    height: 100vh;
+
 
 }
 
@@ -26,26 +27,82 @@
 
 .whoami {
     margin-left: 2em;
-    flex-direction: column;
-    justify-content: flex-start;
     width: 50%;
     text-align: justify;
-    font-style: italic;
     flex-basis: auto;
     color: rgb(21, 187, 187)
 }
 
 .whoami p {
+    font-family: 'Roboto Mono', monospace;
     width: 100%;
+    font-size: 2em
+}
+
+.whoami h1 {
+    font-size: 4em;
+    width: auto;
+    font-family: 'Merriweather Sans', sans-serif;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(25, end),
+        blink-caret .75s step-end infinite;
+
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
 }
 
 .myskills {
-    color: rgb(165, 187, 21);
-    padding-left: 40%;
+
+    padding-left: 50em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-size: 150%;
-    font-style: italic;
+    height: 100vh;
+
+}
+
+.myskills h1 {
+    font-size: 4em;
+    width: auto;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(18, 216, 209);
+
+}
+
+.myskills p {
+    color: rgb(165, 187, 21);
+    font-family: 'Roboto Mono', monospace;
+    width: 100%;
+    font-size: 2em
 }

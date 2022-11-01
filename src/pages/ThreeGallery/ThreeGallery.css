@@ -5,6 +5,16 @@
     overflow: hidden;
 }
 
+@keyframes noise {
+    0% {
+        background-position-y: 0px;
+    }
+
+    100% {
+        background-position-y: -420px;
+    }
+}
+
 .loader {
     display: flex;
     justify-content: center;
@@ -15,6 +25,104 @@
     width: 100%;
     color: white;
     z-index: 3;
+    box-shadow: 0px 0px 122px 25px black inset;
+    background-image: url('../../static/img/loadback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: noise 230ms steps(6) infinite;
+}
+
+.text-glitch {
+    font-size: 200%;
+    animation: glitch 2s linear infinite;
+}
+
+.text-glitch::before {
+
+    color: black;
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7x);
+    -ms-filter: blur(7px);
+    filter: blur(7px);
+    display: block;
+    position: absolute;
+    z-index: -1;
+    font-size: 132px;
+    left: 0px;
+    right: 0px;
+    margin-top: -30px;
+    opacity: .5;
+    font-size: 200%;
+}
+
+@keyframes glitch {
+    3% {
+        text-shadow: 7px 7px 0px red;
+    }
+
+    6% {
+        text-shadow: -9px 4px 0px blue;
+        transform: translate(4px, -10px) skewX(3240deg);
+    }
+
+    7% {
+        text-shadow: 3px -4px 0px green;
+    }
+
+    9% {
+        text-shadow: 0px 0px 3px white;
+        transform: translate(0px, 0px) skewX(0deg);
+    }
+
+    2%,
+    54% {
+        transform: translateX(0px) skew(0deg);
+    }
+
+    55% {
+        transform: translate(-2px, 6px) skew(-5530deg);
+    }
+
+    56% {
+        text-shadow: 0px 0px 3px white;
+        transform: translate(0px, 0px) skew(0deg);
+    }
+
+    57% {
+        text-shadow: 7px 7px 0px red;
+        transform: translate(4px, -10px) skew(-70deg);
+    }
+
+    58% {
+        text-shadow: 0px 0px 3px white;
+        transform: translate(0px, 0px) skew(0deg);
+    }
+
+    62% {
+        text-shadow: 3px -4px 0px green;
+        transform: translate(0px, 20px) skew(0deg);
+    }
+
+    63% {
+        text-shadow: 0px 0px 3px white;
+        transform: translate(4px, -2px) skew(0deg);
+    }
+
+    64% {
+        transform: translate(1px, 3px) skew(-230deg);
+
+    }
+
+    65% {
+        transform: translate(-7px, 2px)skew(120deg);
+
+    }
+
+    66% {
+        transform: translate(0px, 0px) skew(0deg);
+    }
+
 }
 
 .noloader {

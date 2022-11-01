@@ -15,16 +15,19 @@ const[navShow, setNavShow]=useState(false)
 const handleOnClick = ()=>{
   setNavShow(!navShow)
 }
+const handleClickOutside = ()=>{
+  setNavShow(false)
+}
 
 
 
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={ <Home handleOnClick={handleOnClick} navShow={navShow} /> }/>
-        <Route path='/aboutme' element={ <About handleOnClick={handleOnClick} navShow={navShow}/> }/>
+        <Route path='/' element={ <Home handleOnClick={handleOnClick} navShow={navShow} handleClickOutside={handleClickOutside}/> }/>
+        <Route path='/aboutme' element={ <About handleOnClick={handleOnClick} navShow={navShow} handleClickOutside={handleClickOutside}/> }/>
         <Route path='/3dgallery' element={<ThreeGallery/>}/>
-        <Route path='/intro' element={<Intro handleOnClick={handleOnClick} navShow={navShow}/>}/>
+        <Route path='/intro' element={<Intro handleOnClick={handleOnClick} navShow={navShow} handleClickOutside={handleClickOutside}/>}/>
         {/* <Route path='/3dgallery' element={<Twogallery/>}/> */}
         <Route path= '*' element={<Navigate to='/' replace/>}/>
         </Routes>

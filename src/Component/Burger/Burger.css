@@ -1,16 +1,21 @@
 .line {
+    cursor: pointer;
     width: 35px;
     height: 5px;
-    background-color: rgb(255, 255, 255);
+    background-color: bisque;
     margin: 6px 0;
 }
 
+.burger:hover {
+    opacity: 0.5;
+}
+
 .burger {
+    cursor: pointer;
     margin: 20px;
     position: absolute;
     top: 0px;
     height: 35px;
     width: 35px;
-    background-color: black;
     z-index: 1
 }
