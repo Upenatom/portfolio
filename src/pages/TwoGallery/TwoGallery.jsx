@@ -140,24 +140,24 @@ export default function
             <div className='thegallery' onClick={() => handleClickOutside()}>
                 <div className='app-pic1' onClick={handleDivClick}>
                 </div>
-                <div className='tag-1' > <p>ROUTE TICKET</p></div>
+                <div className='tag-1' > <h3>ROUTE TICKET</h3></div>
                 <div className='app-pic2' onClick={handleDivClick} >
                 </div>
-                <div className='tag-2' > <p>THRIFTOLOGY</p></div>
+                <div className='tag-2' > <h3>THRIFTOLOGY</h3></div>
                 <div className='app-pic3' onClick={handleDivClick} ></div>
                 <div className='tag-3' >
-                    <p>GO BANANAS !!!!</p></div>
+                    <h3>GO BANANAS !!!!</h3></div>
                 <div className='app-pic4' onClick={handleDivClick} ></div>
                 <div className='tag-4' >
-                    <p>SADIE'S MAYDAY REPAIR</p></div>
-                <div className='page-title'><h1>THE GALLERY</h1></div>
+                    <h3>SADIE'S MAYDAY REPAIR</h3></div>
+                <div className='page-title'><h1><span style={{ color: 'yellow' }}>T</span>he <span style={{ color: 'blue' }}>Gallery</span></h1></div>
             </div>
 
             <div className={descOpen} onClick={handleDivClick}>
 
 
                 <div className='overlaydesc'>
-                    <div className='closebutton' onClick={handleDivClick}>X</div>
+                    <div className='closebutton' onClick={handleDivClick}>x</div>
                     <h1>{title}</h1>
                     {content}
                     <a href={gitUrl} target="_blank" rel="noopener noreferrer"><button >Github</button></a> <a href={projectUrl} target="_blank" rel="noopener noreferrer"><button >Experience {title}</button></a>

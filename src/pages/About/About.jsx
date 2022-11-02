@@ -35,8 +35,10 @@ export default function About({ handleOnClick, navShow, handleClickOutside }) {
                 <div className='myskills'>
 
                     <div className='skillstext'>
-                        <h1 >Skills I deliver</h1>
-                        <p>REACT | MongoDB |Javascript | Python | Django | Express | SQL | Git | HTML | CSS</p>
+                        <div className='skillsborder'>
+                            <h1 >Skills I deliver</h1>
+                            <p>REACT | MongoDB | Javascript | Python | Django | Express | SQL | Git | HTML | CSS | Mongoose | Node | MERN stack | MEN stack | RESTful | Spline |</p>
+                        </div>
                     </div>
                     <div className='logos'>
                         <div className='logo1'></div>

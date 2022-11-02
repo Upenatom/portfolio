@@ -14,3 +14,26 @@
     line-height: 2em;
     pointer-events: none
 }
+
+/*-----MOBILE------*/
+@media only screen and (max-width: 600px) {
+    .speech {
+        left: 0;
+        font-size: .7em;
+
+    }
+
+    .first {
+        display: none
+    }
+
+    .second {
+        width: 100vw;
+        display: none
+    }
+
+    .third {
+        width: 100vw;
+    }
+
+}

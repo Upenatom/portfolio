@@ -44,15 +44,10 @@
     width: auto;
     font-family: 'Merriweather Sans', sans-serif;
     overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange;
-    /* The typwriter cursor */
     white-space: nowrap;
-    /* Keeps the content on a single line */
     margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em;
-    /* Adjust as needed */
     animation:
         typing 3.5s steps(25, end),
         blink-caret .75s step-end infinite;
@@ -97,6 +92,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    margin: 15%;
+
 
 }
 
@@ -115,7 +112,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin: 20%;
+    margin: 26%;
 }
 
 .logo5 {
@@ -133,7 +130,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin: 20%;
+    margin: 30%;
 }
 
 .logo7 {
@@ -151,6 +148,8 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    margin: 10%;
+
 }
 
 .logos {
@@ -162,6 +161,13 @@
         "logo2 logo8"
         "logo5 logo6"
         "logo7 logo4";
+    border-right: solid 2px #b72a2a;
+    border-top: solid 2px #b72a2a;
+    border-bottom: solid 2px #b72a2a;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    box-shadow: 10px 10px 10px #b72a2a;
 }
 
 .myskills {
@@ -172,12 +178,15 @@
     grid-template-areas: ". skillstext";
     height: 100vh;
 
+
 }
 
 .skillstext {
     grid-area: skillstext;
     margin-right: 20px;
     align-self: center;
+    justify-self: center;
+    text-align: center;
 
 }
 
@@ -195,5 +204,8 @@
     font-family: 'Roboto Mono', monospace;
     width: 100%;
     font-size: 1.75em;
-    text-align: right;
+    line-height: 3em;
+    padding-right: 2em;
+
+
 }

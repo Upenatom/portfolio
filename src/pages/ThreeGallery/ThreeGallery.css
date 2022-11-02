@@ -132,3 +132,13 @@
 .noloader {
     display: none;
 }
+
+
+/*-----MOBILE------*/
+@media only screen and (max-width: 600px) {
+
+
+    .loader {
+        font-size: .5em;
+    }
+}

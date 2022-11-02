@@ -1,6 +1,6 @@
 .twogallery {
     height: 100vh;
-    background-image: linear-gradient(rgb(0, 0, 0), bisque);
+    /* background-image: linear-gradient(rgb(0, 0, 0), bisque); */
     position: relative;
 
 }
@@ -16,14 +16,31 @@
     align-items: start;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        ". . . . . . "
-        ". pic1 . pic2 . ."
-        ". tag1 title tag2 . ."
-        ". pic3 . pic4 . ."
-        ". tag3 . tag4 . ."
+        ". . . . .  "
+        ". pic1 . pic2 . "
+        ". tag1 . tag2 . "
+        ". title title title . "
+        ". pic3 . pic4 . "
+        ". tag3 . tag4 . "
+        ". . . . . "
     ;
+
+}
+
+button {
+
+    /* background-color: rgb(30, 30, 30, 0.25); */
+    padding: 0.5em 3em;
+    border: 0.2em solid bisque;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.15s;
+    font-size: 1em;
+    color: bisque;
 
 }
 
@@ -78,6 +95,16 @@ button a {
     padding-right: 5px;
 }
 
+.overlaydesc p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.overlaydesc h1 {
+    margin: 0;
+    line-height: 0
+}
+
 .page-title {
     display: flex;
     align-self: center;
@@ -89,12 +116,14 @@ button a {
 
 .page-title h1 {
     text-align: center;
-    font-size: 4em;
-    border: solid 3px black;
-    background-image: linear-gradient(135deg, rgb(166, 127, 30), gold);
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(2, 2, 66)
+    color: white;
+    font-size: 8em;
+    margin: 0;
+
+    /* border: solid 3px black; */
+    /* background-image: linear-gradient(135deg, rgb(166, 127, 30), gold); */
+    /* padding: 5px; */
+
 }
 
 .app-pic1 {
@@ -153,29 +182,56 @@ button a {
 
 .tag-1 {
     grid-area: tag1;
-    border: solid 1px black;
+
 }
 
 .tag-2 {
     grid-area: tag2;
-    border: solid 1px black;
+
 }
 
 .tag-3 {
     grid-area: tag3;
-    border: solid 1px black;
+
 }
 
 .tag-4 {
     grid-area: tag4;
-    border: solid 1px black;
+
 }
 
-.tag-1 p,
-.tag-2 p,
-.tag-3 p,
-.tag-4 p {
+.tag-1 h3,
+.tag-2 h3,
+.tag-3 h3,
+.tag-4 h3 {
     margin: 0px;
     padding: 5px;
-    background-image: linear-gradient(135deg, rgb(166, 127, 30), gold);
+    color: white;
+    font-size: 2em;
+}
+
+/*-----MOBILE------*/
+@media only screen and (max-width: 600px) {
+    .twogallery {
+        width: 100vw;
+        background-image: linear-gradient(rgb(0, 0, 0), bisque);
+    }
+
+    .thegallery {
+
+        display: grid;
+        justify-items: center;
+        align-items: start;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "title "
+            "pic1"
+            "pic2"
+            "pic3"
+            "pic4"
+        ;
+
+    }
 }
