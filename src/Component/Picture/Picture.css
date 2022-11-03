@@ -1,6 +1,6 @@
 .profilepic {
 
-    /* position: relative; */
+
     width: 15%;
     border: .2em solid #0f2f5f;
     border-radius: 50%;
@@ -16,4 +16,30 @@
     content: '';
     display: block;
     padding-bottom: 100%;
+}
+
+/*===========================MOBILE========================*/
+
+@media only screen and (max-width: 850px) {
+    .profilepic {
+
+        margin-top: 0%;
+        width: 50%;
+        border: .2em solid #0f2f5f;
+        border-radius: 50%;
+        background-image: url('../../static/img/profilepic.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: rgb(13, 30, 56);
+
+
+    }
+
+    .profilepic::before {
+        content: '';
+        display: block;
+        padding-bottom: 100%;
+    }
+
 }

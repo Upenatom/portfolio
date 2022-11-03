@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Intros from '../../Component/Introscene/Introscene'
 import Burger from '../../Component/Burger/Burger'
 import Speech from '../../Component/Speech/Speech'
@@ -10,9 +10,13 @@ export default function Intro({ handleOnClick, navShow, handleClickOutside }) {
     const [load, setLoad] = useState('loader')
     const [endScroll, setendScroll] = useState(false)
 
+
     const divobj = useRef()
 
     const navigate = useNavigate()
+    const phone = useRef();
+    const controller = useRef();
+
 
 
     const onWheel = (e) => {
@@ -33,17 +37,26 @@ export default function Intro({ handleOnClick, navShow, handleClickOutside }) {
     const onMouseUp = (e) => {
         if (e.target.name === 'controller') {
             navigate('/3dgallery')
+
         } else if (e.target.name === 'phone') {
             navigate('/2dgallery')
         }
 
+
     }
-    const onLoad = () => {
-        const delayInMilliseconds = 3000
+    const onLoad = (spline) => {
+        // const phoneobj = spline.findObjectByName('phone')
+        // const controllerobj = spline.findObjectByName('controller')
+
+        // phone.current = phoneobj
+        // controller.current = controllerobj
+
+        const delay = 3000
         setTimeout(function () {
             setLoad('noloader')
 
-        }, delayInMilliseconds);
+        }, delay);
+
     }
 
 

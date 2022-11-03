@@ -6,7 +6,7 @@ import Burger from '../../Component/Burger/Burger'
 import Picture from '../../Component/Picture/Picture'
 import Scroll from '../../Component/Scroll/Scroll'
 import './About.css'
-export default function About({ handleOnClick, navShow, handleClickOutside }) {
+export default function About({ handleOnClick, navShow, handleClickOutside, winWidth }) {
 
     useEffect(() => {
         AOS.init();
@@ -15,7 +15,7 @@ export default function About({ handleOnClick, navShow, handleClickOutside }) {
     return (
         <div className='aboutpage'>
             <Burger className='burg' handleOnClick={handleOnClick} />
-            {navShow ? <Nav handleOnClick={handleOnClick} /> : null}
+            {navShow ? <Nav handleOnClick={handleOnClick} winWidth={winWidth} /> : null}
             <div onClick={() => handleClickOutside()}>
                 <div className='aboutme' >
                     <Picture />

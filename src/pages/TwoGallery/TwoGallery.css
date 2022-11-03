@@ -1,37 +1,6 @@
-.twogallery {
-    height: 100vh;
-    /* background-image: linear-gradient(rgb(0, 0, 0), bisque); */
-    position: relative;
-
-}
-
-.twogallery h1 {
-    text-align: center;
-}
-
-.thegallery {
-
-    display: grid;
-    justify-items: center;
-    align-items: start;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        ". . . . .  "
-        ". pic1 . pic2 . "
-        ". tag1 . tag2 . "
-        ". title title title . "
-        ". pic3 . pic4 . "
-        ". tag3 . tag4 . "
-        ". . . . . "
-    ;
-
-}
-
 button {
 
-    /* background-color: rgb(30, 30, 30, 0.25); */
+
     padding: 0.5em 3em;
     border: 0.2em solid bisque;
     margin: 0 0.3em 0.3em 0;
@@ -105,6 +74,36 @@ button a {
     line-height: 0
 }
 
+.twogallery {
+    height: 100vh;
+    position: relative;
+
+}
+
+.twogallery h1 {
+    text-align: center;
+}
+
+.thegallery {
+
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        ". . . . .  "
+        ". pic1 . pic2 . "
+        ". tag1 . tag2 . "
+        ". title title title . "
+        ". pic3 . pic4 . "
+        ". tag3 . tag4 . "
+        ". . . . . "
+    ;
+
+}
+
 .page-title {
     display: flex;
     align-self: center;
@@ -119,10 +118,6 @@ button a {
     color: white;
     font-size: 8em;
     margin: 0;
-
-    /* border: solid 3px black; */
-    /* background-image: linear-gradient(135deg, rgb(166, 127, 30), gold); */
-    /* padding: 5px; */
 
 }
 
@@ -207,31 +202,206 @@ button a {
     margin: 0px;
     padding: 5px;
     color: white;
-    font-size: 2em;
+    font-size: 1.25em;
 }
 
-/*-----MOBILE------*/
-@media only screen and (max-width: 600px) {
-    .twogallery {
+/*===========================MOBILE========================*/
+
+@media only screen and (max-width: 850px) {
+
+    button {
+
+
+        padding: 0.5em 3em;
+        border: 0.2em solid bisque;
+        margin: 0 0.3em 0.3em 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        text-align: center;
+        transition: all 0.15s;
+        font-size: 1em;
+        color: bisque;
+
+    }
+
+    button a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .closebutton {
+        z-index: 4;
+        width: fit-content;
+        height: auto;
+        color: red;
+        font-size: 2em;
+        font-style: bold;
+        cursor: pointer;
+        align-self: flex-end;
+        margin-right: 30px;
+    }
+
+    .greyback {
+        top: 0;
+        z-index: 2;
+        position: absolute;
         width: 100vw;
-        background-image: linear-gradient(rgb(0, 0, 0), bisque);
+        height: 100vh;
+        background-color: rgb(0, 0, 0, .75);
+    }
+
+    .greybackclosed {
+        display: none
+    }
+
+    .overlaydesc {
+        position: fixed;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        top: 5%;
+        left: 0%;
+        height: 90%;
+        width: 90%;
+        margin-top: 0vh;
+        margin-left: 0vw;
+        border: solid 5px rgb(35, 154, 209);
+        color: white;
+        background-color: rgb(0, 0, 0, 1);
+        font-size: .75em;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .overlaydesc p {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .overlaydesc h1 {
+        margin: 0;
+        line-height: 0
+    }
+
+
+
+
+
+    .twogallery {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
     }
 
     .thegallery {
-
+        position: relative;
         display: grid;
-        justify-items: center;
-        align-items: start;
-        height: 100vh;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
-            "title "
-            "pic1"
-            "pic2"
-            "pic3"
-            "pic4"
+            " title"
+            " pic1 "
+            " tag1 "
+            " pic2 "
+            " tag2 "
+            " pic3"
+            " tag3 "
+            " pic4 "
+            "tag4 "
         ;
 
+
+    }
+
+    .page-title {
+        display: flex;
+        align-self: center;
+        grid-area: title;
+        font-size: 2em;
+        margin-top: 18em;
+        margin-bottom: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        filter: drop-shadow(10px 10px 5px rgb(0 0 0 / 0.5));
+    }
+
+    .page-title h1 {
+        text-align: center;
+        color: white;
+        font-size: 1em;
+        margin: 0;
+
+    }
+
+
+
+    .app-pic1 {
+        background-image: url('../../static/img/routesmall.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 200px;
+        width: 330px;
+        grid-area: pic1;
+        background-position: center;
+        margin: 5px;
+        cursor: pointer;
+        filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+    }
+
+    .app-pic2 {
+        background-image: url('../../static/img/Thriftologysmall.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 200px;
+        width: 330px;
+        grid-area: pic2;
+        background-position: center;
+        margin: 5px;
+        cursor: pointer;
+        filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+    }
+
+
+    .app-pic3 {
+        background-image: url('../../static/img/gobanans.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 200px;
+        width: 330px;
+        grid-area: pic3;
+        background-position: center;
+        margin: 5px;
+        cursor: pointer;
+        filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+
+    }
+
+    .app-pic4 {
+        background-image: url('../../static/img/Sadiessmall.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 200px;
+        width: 330px;
+        grid-area: pic4;
+        background-position: center;
+        margin: 5px;
+        cursor: pointer;
+        filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
+    }
+
+    .tag-1,
+    .tag-2,
+    .tag-3,
+    .tag-4 {
+        margin-bottom: 1em;
+        padding: 5px;
+        color: white;
+        font-size: 1.25em;
     }
 }

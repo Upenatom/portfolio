@@ -6,7 +6,7 @@ import Burger from '../../Component/Burger/Burger'
 import Nav from '../../Component/Nav/Nav'
 import './TwoGallery.css'
 export default function
-    TwoGallery({ handleOnClick, handleClickOutside, navShow }) {
+    TwoGallery({ handleOnClick, handleClickOutside, navShow, winWidth }) {
 
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
@@ -136,7 +136,7 @@ export default function
     return (
         <div className='twogallery' >
             <Burger className='burg' handleOnClick={handleOnClick} />
-            {navShow ? <Nav handleOnClick={handleOnClick} /> : null}
+            {navShow ? <Nav handleOnClick={handleOnClick} winWidth={winWidth} /> : null}
             <div className='thegallery' onClick={() => handleClickOutside()}>
                 <div className='app-pic1' onClick={handleDivClick}>
                 </div>

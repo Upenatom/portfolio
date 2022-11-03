@@ -26,3 +26,33 @@
 .links:hover {
     opacity: 0.5;
 }
+
+/*===========================MOBILE========================*/
+
+@media only screen and (max-width: 850px) {
+    .navopen {
+        position: absolute;
+        left: 15px;
+        top: 55px;
+        height: 300px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 1;
+        background-color: rgba(5, 5, 5, 1);
+        margin: 10px;
+        color: bisque;
+        border: solid 2px bisque;
+    }
+
+    .links {
+
+        text-decoration: none;
+        font-size: 1em;
+        text-align: center;
+        padding-left: 5px;
+        color: inherit;
+
+    }
+}

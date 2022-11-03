@@ -5,23 +5,25 @@ import 'aos/dist/aos.css';
 import Nav from '../../Component/Nav/Nav'
 import Burger from '../../Component/Burger/Burger'
 import './Home.css'
-export default function Home({ navShow, handleOnClick, handleClickOutside }) {
+export default function Home({ navShow, handleOnClick, handleClickOutside, winWidth }) {
 
     useEffect(() => {
         AOS.init();
     }, [])
 
-    const toIntro = useNavigate()
+    const navigate = useNavigate()
 
     const handleButtonClick = () => {
-
-        toIntro('./intro')
+        if (winWidth < 600) {
+            navigate('/2dgallery')
+        } else
+            navigate('/intro')
     }
 
     return (
         <div>
             <Burger className='burg' handleOnClick={handleOnClick} />
-            {navShow ? <Nav handleOnClick={handleOnClick} /> : null}
+            {navShow ? <Nav handleOnClick={handleOnClick} winWidth={winWidth} /> : null}
 
             <div className='page1' onClick={() => handleClickOutside()}>
                 <div className='myname'>

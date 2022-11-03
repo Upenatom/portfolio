@@ -209,3 +209,92 @@
 
 
 }
+
+/*===========================MOBILE========================*/
+
+@media only screen and (max-width: 850px) {
+    .aboutme {
+
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+
+
+    }
+
+    .whoami {
+        margin-left: 0;
+        width: 90%;
+        text-align: none;
+        flex-basis: none;
+        color: rgb(21, 187, 187)
+    }
+
+    .whoami p {
+        font-family: 'Roboto Mono', monospace;
+        width: 100%;
+        font-size: .75em
+    }
+
+    .whoami h1 {
+        font-size: 1.4em;
+        margin-top: 1em;
+    }
+
+
+
+    .logos {
+        display: none;
+    }
+
+
+    .myskills {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: " skillstext"
+            ".";
+        height: 100vh;
+
+
+    }
+
+    .skillstext {
+        grid-area: skillstext;
+        margin-right: 20px;
+        margin-left: 20px;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+
+    }
+
+    .skillstext h1 {
+        font-size: 3em;
+        width: auto;
+        font-family: 'Merriweather Sans', sans-serif;
+        color: rgb(199, 174, 6);
+
+
+    }
+
+    .skillstext p {
+        color: rgb(165, 187, 21);
+        font-family: 'Roboto Mono', monospace;
+        width: 100%;
+        font-size: 1em;
+        line-height: 3em;
+        padding-right: 2em;
+
+
+    }
+
+
+
+
+}
